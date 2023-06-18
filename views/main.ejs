@@ -1,0 +1,11 @@
+<%- include("index") %>
+
+<% for(var i=0;i<data.length;i++) { %>
+    <h1> <%= data[i].name %> </h1>
+    <form action="/" method="post">
+        <input type="hidden" name="name" value="<%=data[i]._id%>">
+        <button type="submit">Add to cart</button>
+    </form>
+<% } %>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,900" rel="stylesheet">
+    <style>
+        *{
+            margin: 0 0 0;
+        }
+        nav{
+            background: black;
+            height: 100px;
+            color: white;
+            text-align: center;
+           
+        }
+        nav a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            background: red;
+            font-size: 20px;
+            padding: 10px ;
+            text-align: center;
+            margin-top: 3px;
+            border-radius: 20px;
+            border: 2px solid white;
+        }
+      
+        cartt a{
+            display: block;
+            text-decoration: none;
+            color: white;
+            float: right;
+        }
+  
+    
+    </style>
+</head>
+<body>
+   <nav>
+        <a href="/">Home</a>
+        <a href="#">Test1</a>
+        <a href="#">test2 </a>
+        <a href="#">tEst3</a>
+        <div class="cartt"> <a href="/cart"> Cart: <%= crt %></a></div>
+   </nav>
